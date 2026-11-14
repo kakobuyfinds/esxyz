@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>FishBuy spreadsheet – köpguide för skor, kläder och accessoarer</title>
+<meta name="description" content="Använd FishBuy spreadsheet för att hitta kategorier och jämföra produktlänkar, storlekar, QC-bilder och totalpris inför leverans till Sverige.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:title" content="FishBuy spreadsheet – svensk köpguide och produktkategorier">
+<meta property="og:description" content="Bläddra bland skor, kläder och accessoarer. Kontrollera mått, QC-bilder och fraktkostnad före köp.">
+<meta name="theme-color" content="#142e32">
+<!-- Sökunderlag: Googles svenska resultatsida gick inte att verifiera. Kompletterande sökning omfattade bland annat CAFANS, USFansYupoo, FSBuy, Repsheet, W2C Links, BBBBuy Sheet, Superbuy Tips, WegoBuy Finds, CNBuyPilot och ChinaFinds. Träffar för andra agenter användes endast som underlag för allmänna köpfrågor. -->
+<!-- Sekundära sökfraser: FishBuy produktlänkar, FishBuy köpguide, FishBuy storleksguide, FishBuy QC-bilder.
+Längre sökfraser: hitta skor med FishBuy spreadsheet; produktlänkar för sneakers; jämföra sneakers efter innermått; mäta fotlängd för sneakers; jämföra hoodie med eget plagg; mäta bröstbredd på tröja; jämföra t-shirt efter plagglängd; storleksguide för jackor online; mäta midja på byxor; jämföra kepsar efter huvudomkrets; kontrollera mått på armband; läsa en produktannons före köp; hitta rätt färgvariant i produktlänk; spara produktlänkar per kategori; granska QC-bilder på skor; be om foto med måttband; kontrollera sömmar på lagerbilder; jämföra listpris och totalpris; räkna om produktpris till SEK; uppskatta fraktkostnad till Sverige; jämföra vikt och paketmått; kontrollera returvillkor före köp; dokumentera pris vid jämförelse; bedöma produktbilder för märkesvaror. -->
+<style>
+:root{color-scheme:light;--ink:#142e32;--muted:#435c5b;--paper:#f6f3ed;--line:#c8d2cc;--accent:#ffd2a4;--white:#fff}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}h1,h2,h3,p,figure{margin:0}h1,h2,h3{line-height:1.13}h1{font-size:clamp(2.55rem,7vw,5.3rem);letter-spacing:-.065em;overflow-wrap:anywhere}h2{font-size:clamp(1.55rem,3vw,2.4rem);letter-spacing:-.035em}h3{font-size:1.25rem}p+p,h2+p,h3+p{margin-top:.65rem}a{color:inherit}a:focus-visible,summary:focus-visible{outline:3px solid #aa4515;outline-offset:4px}.hero a:focus-visible,footer a:focus-visible{outline-color:var(--accent)}.wrap{width:min(71rem,calc(100% - 2rem));margin-inline:auto}.hero,footer{background:var(--ink);color:var(--white)}.hero .wrap{display:grid;grid-template-columns:1.45fr 1fr;align-items:center;gap:clamp(1rem,5vw,4rem);padding-block:clamp(1.5rem,5vw,3.5rem)}.hero p{max-width:46ch;margin-block:1rem}.hero figure{color:#e3ece7}.hero img{background:#e7e1d7;aspect-ratio:4/3}.button{display:inline-block;background:var(--accent);color:var(--ink);font-weight:750;padding:.65rem 1rem;border-radius:.35rem}.section{padding-block:1.7rem;border-bottom:1px solid var(--line)}.categories,.gallery,.articles{display:grid;gap:.7rem;margin-top:1rem}.categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr));padding:0;list-style:none}.categories a{display:block;padding:.64rem .75rem;border:1px solid var(--line);background:var(--white);border-radius:.4rem;font-weight:650}.categories a:hover{background:#ffe8d0}.gallery{grid-template-columns:repeat(4,minmax(0,1fr))}.gallery img{background:#e9e4dd;aspect-ratio:1}.gallery figcaption,.hero figcaption{font-size:.875rem;padding-top:.35rem}.gallery figcaption{color:var(--muted)}img{display:block;width:100%;height:auto;object-fit:contain;border-radius:.45rem}.articles{grid-template-columns:repeat(2,minmax(0,1fr))}.articles article{background:var(--white);border:1px solid var(--line);padding:1rem;border-radius:.45rem}.faq details{border-top:1px solid var(--line);padding:.7rem 0}.faq details:first-of-type{margin-top:.8rem}.faq summary{cursor:pointer;font-weight:700}.faq details p{margin-top:.4rem}.note{color:var(--muted);max-width:68ch}footer .wrap{padding-block:1.3rem}footer a{font-weight:700}@media(max-width:660px){.hero .wrap,.articles{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero figure{max-width:28rem}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "sv",
+  "name": "FishBuy spreadsheet",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad är FishBuy spreadsheet?",
+      "acceptedAnswer": {"@type":"Answer","text":"Det är ett sökord för en översikt där du kan samla produktlänkar och jämföra varianter, mått och kostnader. På den här sidan går kategorilänkarna till CAFANS."}
+    },
+    {
+      "@type": "Question",
+      "name": "Hur kontrollerar jag storleken före köp?",
+      "acceptedAnswer": {"@type":"Answer","text":"Jämför måtten i annonsen med fotlängden eller ett plagg som passar. Be om innermått för skor och kontrollera att plaggmåtten gäller vald storlek."}
+    },
+    {
+      "@type": "Question",
+      "name": "Vad visar QC-bilder?",
+      "acceptedAnswer": {"@type":"Answer","text":"QC-bilder kan visa synliga detaljer som sömmar, etiketter och färg. Be om ett närfoto eller ett foto med måttband vid behov. Bilderna räcker inte för att styrka äkthet."}
+    },
+    {
+      "@type": "Question",
+      "name": "Hur uppskattar jag totalpriset till Sverige?",
+      "acceptedAnswer": {"@type":"Answer","text":"Summera varans pris, lokal frakt, eventuella serviceavgifter, internationell frakt och tillämpliga importkostnader. Räkna om till SEK och ange vilken växelkurs du använde."}
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/esxyz/">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>FishBuy spreadsheet</h1>
+      <p>Hitta rätt kategori på CAFANS och jämför skor, kläder och accessoarer. Spara produktlänken tillsammans med variant, mått och uppskattad kostnad till Sverige.</p>
+      <a class="button" href="https://www.cafans.com">Öppna CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://www.courtsidesneakers.com/cdn/shop/products/315122-111-PHSRH000-750.png?v=1589453003&amp;width=600" alt="Vit Nike Air Force 1 ’07 sedd från sidan" width="600" height="450" loading="eager" fetchpriority="high">
+      <figcaption>Nike Air Force 1 ’07 · bildexempel för sneakers</figcaption>
+    </figure>
+  </div>
+</header>
+<main class="wrap">
+  <nav class="section" aria-labelledby="kategorier">
+    <h2 id="kategorier">Produktkategorier</h2>
+    <ul class="categories">
+      <li><a href="https://cafans.com/category-911-Shoes.html">Skor</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Jackor</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Huvudbonader</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Klädset</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Matchtröjor</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Accessoarer</a></li>
+    </ul>
+  </nav>
+  <section class="section" aria-labelledby="bildexempel">
+    <h2 id="bildexempel">Bildexempel för kläder och accessoarer</h2>
+    <p class="note">Bilderna illustrerar kategorierna. Kontrollera modell, tillgänglighet och produktbilder i den enskilda annonsen.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/593J696U3012C530_E01?%24default_GHC%24=&amp;crop=408%2C150%2C1183%2C1357&amp;hei=450&amp;wid=400" alt="Mörkblå Dior Oblique T-shirt med ton-i-ton-mönster" width="400" height="400" loading="lazy" decoding="async">
+        <figcaption>Dior Oblique · T-shirt</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" alt="Beige och brun Gucci-keps i GG-canvas" width="640" height="640" loading="lazy" decoding="async">
+        <figcaption>Gucci · keps i GG-canvas</figcaption>
+      </figure>
+      <figure>
+        <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M77590_PM2_Front%20view.png?hei=400&amp;wid=400" alt="Louis Vuitton Monogram Essential-keps med mönstrad panel och böjd skärm" width="400" height="400" loading="lazy" decoding="async">
+        <figcaption>Louis Vuitton · Monogram Essential</figcaption>
+      </figure>
+      <figure>
+        <img src="https://a.1stdibscdn.com/hermes-chaine-dancre-bracelet-in-925-sterling-silver-for-sale/22569652/j_169569521662976874245/j_16956952_1662976875161_bg_processed.jpg?width=480" alt="Hermès Chaîne d’Ancre-armband med silverlänkar och stavlås" width="480" height="480" loading="lazy" decoding="async">
+        <figcaption>Hermès · Chaîne d’Ancre</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="kopguide">
+    <h2 id="kopguide">FishBuy köpguide</h2>
+    <div class="articles">
+      <article>
+        <h3>Produktlänkar och rätt variant</h3>
+        <p>Spara en FishBuy-produktlänk tillsammans med modell, vald färg och storlek. Öppna länken igen före köp och se till att bilden och måttabellen gäller just den variant du valt. Anteckna när du kontrollerade priset och läs säljarens returvillkor.</p>
+      </article>
+      <article>
+        <h3>Storleksguide för skor och kläder</h3>
+        <p>Mät båda fötterna och använd den längre fotens mått när du jämför sneakers. Lägg en tröja som passar plant och mät bröstbredd och plagglängd. För mössor och kepsar kan du jämföra huvudomkretsen med det angivna storleksintervallet.</p>
+      </article>
+      <article>
+        <h3>Kontrollera sömmar och mått på QC-bilder</h3>
+        <p>Granska bilder av det exemplar som ska skickas. Titta på sulkanter och sömmar på skor, eller be om en närbild av ett lås på ett armband. Kontrollera att ett foto med måttband tydligt visar båda mätpunkterna.</p>
+      </article>
+      <article>
+        <h3>Jämför totalpris och frakt till Sverige</h3>
+        <p>Anteckna produktpris och avgifter i samma valuta. Jämför fraktalternativen med paketets vikt och yttermått, och kontrollera om importkostnader ingår i den visade summan. Uppdatera uppskattningen när paketmåtten är kända.</p>
+      </article>
+    </div>
+  </section>
+  <section class="section faq" aria-labelledby="fragor">
+    <h2 id="fragor">Vanliga frågor</h2>
+    <details>
+      <summary>Vad är FishBuy spreadsheet?</summary>
+      <p>Det är ett sökord för en översikt där du kan samla produktlänkar och jämföra varianter, mått och kostnader. På den här sidan går kategorilänkarna till CAFANS.</p>
+    </details>
+    <details>
+      <summary>Hur kontrollerar jag storleken före köp?</summary>
+      <p>Jämför måtten i annonsen med fotlängden eller ett plagg som passar. Be om innermått för skor och kontrollera att plaggmåtten gäller vald storlek.</p>
+    </details>
+    <details>
+      <summary>Vad visar QC-bilder?</summary>
+      <p>QC-bilder kan visa synliga detaljer som sömmar, etiketter och färg. Be om ett närfoto eller ett foto med måttband vid behov. Bilderna räcker inte för att styrka äkthet.</p>
+    </details>
+    <details>
+      <summary>Hur uppskattar jag totalpriset till Sverige?</summary>
+      <p>Summera varans pris, lokal frakt, eventuella serviceavgifter, internationell frakt och tillämpliga importkostnader. Räkna om till SEK och ange vilken växelkurs du använde.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <div class="wrap"><a href="https://www.cafans.com">Fortsätt till CAFANS</a></div>
+</footer>
+</body>
+</html>
